@@ -28,8 +28,11 @@
     const label = document.querySelector("#label");
     const swatch = document.querySelector("#swatch");
 
-    function update() {
-
+    function update() 
+    {
+      const item = color_Paterns[current_Selection];
+      label.textContent = item.name;
+      swatch.style.backgroundColor = item.color;
     }
 
     document.querySelector("#next").addEventListener("click", () => {
